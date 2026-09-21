@@ -1,6 +1,6 @@
-# Jev AI-like Detector — standalone Chrome extension
+# Jev AI Detector — fast & ultra-light Chrome extension
 
-Select text on a webpage and ask TypeSafe Jev for an **AI-like score**. This is a demo, not proof of authorship.
+Select text on a webpage and ask TypeSafe Jev for an **AI-like score**. 
 
 ## Install
 
