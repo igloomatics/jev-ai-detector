@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Jev AI-like Detector",
+  "version": "0.2.1",
+  "description": "Select text and get a fast AI-like score from TypeSafe Jev.",
+  "permissions": ["contextMenus", "activeTab", "scripting", "storage"],
+  "host_permissions": ["https://api.typesafe.ai/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "options_page": "options.html",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "commands": {
+    "analyze-selection": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Y",
+        "mac": "Command+Shift+Y"
+      },
+      "description": "Analyze selected text with Jev"
+    }
+  }
+}

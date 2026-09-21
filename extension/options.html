@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jev AI-like Detector Settings</title>
+  <style>
+    body { font: 14px/1.5 system-ui, sans-serif; max-width: 620px; margin: 48px auto; padding: 0 20px; }
+    h1 { font-size: 22px; }
+    label { display: block; font-weight: 600; margin: 24px 0 8px; }
+    .row { display: flex; gap: 8px; }
+    input { flex: 1; padding: 10px 12px; font: inherit; border: 1px solid #bbb; border-radius: 8px; }
+    button { padding: 10px 14px; font: inherit; border: 1px solid #aaa; border-radius: 8px; cursor: pointer; }
+    .note { margin-top: 14px; color: #555; }
+    #status { margin-top: 12px; min-height: 1.5em; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <h1>Jev AI-like Detector</h1>
+  <p>Save your TypeSafe API key locally in this Chrome profile. The extension will call TypeSafe directly; no local proxy is required.</p>
+
+  <label for="key">TypeSafe API key</label>
+  <div class="row">
+    <input id="key" type="password" autocomplete="off" placeholder="Paste API key" />
+    <button id="toggle" type="button">Show</button>
+    <button id="save" type="button">Save</button>
+  </div>
+  <div id="status"></div>
+  <p class="note">Security: chrome.storage.local is extension-local storage, not a password vault. Use this only with extension code you trust. Remove/rotate the key if you suspect compromise.</p>
+
+  <script src="options.js"></script>
+</body>
+</html>
