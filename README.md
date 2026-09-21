@@ -1,6 +1,8 @@
-# Jev AI Detector — fast & ultra-light Chrome extension
+# Jev AI Detector
 
-Select text on a webpage. (TypeSafe's Jev)[https://typesafe.ai/] gives the **AI-like score**. 
+> fast & ultra-light Chrome extension
+
+Select text on a webpage. [TypeSafe's Jev](https://typesafe.ai/) gives the **AI-like score**. 
 
 ![alt text](image.png)
 
